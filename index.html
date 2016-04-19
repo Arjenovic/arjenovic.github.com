@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KangarooIMG | Framework OOP</title>
+	<meta http-equiv="Content-Type" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Load KangarooIMG Framework -->
+	<link href="kangarooimg.css" rel="stylesheet" type="text/css">
+	<script src="kangarooimg.js"></script>
+
+</head>
+<body>
+
+	<!-- example code -->
+	<script>
+	window.onload = function() {
+
+		var animal1 = new Kangaroo('Bartje', 'KangarooHuis', 'homeBoys');
+		var animal2 = new Kangaroo('Patrick', 'KangarooHuis');
+		var animal3 = new Kangaroo("Tim", 'KangarooHuis');
+		var animal4 = new Kangaroo("Arjen", 'KangarooHuis');
+
+		animal1.createAvatar(300, 200, 'http://scienceblogs.com/pharyngula/files/2014/09/rabbit.jpg');
+		animal2.createAvatar(400, 300, 'http://www.dierenkliniekstratum.nl/files/Artikel1_Konijn_ART2(2)_0.jpg');
+		animal3.createAvatar(150, 300, 'http://www.threelittleladiesrabbitry.com/bugsrobeclip.gif');
+		animal4.createAvatar(200, 300, 'http://www.clipartlord.com/wp-content/uploads/2014/01/easter-bunny2.png');
+
+		animal1.speakOnClick();
+		animal2.speakOnClick();
+		animal3.speakOnClick();
+		animal4.speakOnClick();
+
+		animal3.bounce();
+		animal1.bounce();
+
+		animal3.speak();
+	};
+	</script>
+
+<div id='homeBoys'></div>
+
+	<!-- end of example -->
+	
+</body>
+</html>
